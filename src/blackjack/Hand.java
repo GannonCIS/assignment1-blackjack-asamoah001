@@ -10,9 +10,9 @@ package blackjack;
  * @author gubotdev
  */
 public class Hand {
-   private  Card[]  myCards = new Card[5];
-   private  int numOfCards = 0;
-   private int score = 0 ;
+   private final  Card[]  myCards = new Card[5];
+   private final  int numOfCards = 0;
+   private final  int score = 0 ;
    
    public Hand(){}
    public int getNumofCards(){
