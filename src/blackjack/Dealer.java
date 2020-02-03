@@ -11,4 +11,33 @@ package blackjack;
  */
 public class Dealer {
     
+    private final Hand dealerHand = new Hand();
+    private final Player[] Player = new Player[0];
+    private final Deck Deck = new Deck();
+    
+    /**
+     *
+     * @return 
+     */
+    public void dealOpeningHand(){
+      
+       
+    }
+    
+    public void  playOutPlayerHand(){
+    
+    
+    }
+    public void playOutDealerHand(){
+  
+   
+        
+    }
+    
+    public Card declareWinners(){
+        return null;
+        
+    }
+    
+    
 }
