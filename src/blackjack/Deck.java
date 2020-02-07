@@ -34,7 +34,7 @@ public class Deck {
     private void shuffle(){
         for(int i=0; i< myCards.length;i++){
         Card temp = myCards[i];
-        int rand = (int)(Math.random()*53);
+        int rand = (int)(Math.random()*52);
         myCards[i] = myCards[rand];
         myCards[rand] = temp;
     }
@@ -52,8 +52,14 @@ public class Deck {
      * @return
      */
     public Card dealCard(){
+        Card next = myCards[nextCard];
+        nextCard++;
+        if(nextCard > 51){
+            shuffle();
+            nextCard = 0;
+        }
     
-        return null; //do no forget to change !!!!!!!!!!
+        return next; //do no forget to change !!!!!!!!!!
     }
     
     }

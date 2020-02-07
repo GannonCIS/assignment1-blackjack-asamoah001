@@ -11,8 +11,8 @@ package blackjack;
  */
 public class Hand {
    private final  Card[]  myCards = new Card[5];
-   private final  int numOfCards = 0;
-   private final  int score = 0 ;
+   private  int numOfCards = 0;
+   private  int score = 0 ;
    
    public Hand(){}
    public int getNumofCards(){
@@ -24,11 +24,31 @@ public class Hand {
    } 
    
    public void addCard(Card  newCard){
-   
-   }
+    if (numOfCards > 4){
+        System.out.println("Too many cards for this hand");
+   }else{
+            myCards[numOfCards] = newCard;
+            numOfCards++;
+            try{
+            score += Integer.parseInt(newCard.RANK);
+            } catch (java.lang.NumberFormatException ex){
+                if(newCard.RANK.equals("Ace")){
+                    score += 1;
+                } else {
+                    score += 10;
+                }
+            }
+        }
+    }
    
    public void printHand (){
+       for (Card myCard : myCards) {
+           System.out.println(myCard.RANK + "of" + myCard.SUIT);
+       }
+                
+        
+            }
        
    }
     
-}
+
