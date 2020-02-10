@@ -42,8 +42,8 @@ public class Hand {
     }
    
    public void printHand (){
-       for (Card myCard : myCards) {
-           System.out.println(myCard.RANK + "of" + myCard.SUIT);
+       for (int i = 0; i < numOfCards; i++) {
+           System.out.println(myCards[i].RANK + "of" + myCards[i].SUIT);
        }
                 
         
