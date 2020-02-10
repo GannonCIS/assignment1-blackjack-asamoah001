@@ -15,11 +15,11 @@ public class Hand {
    private  int score = 0 ;
    
    public Hand(){}
-   public int getNumofCards(){
+   public int getNumOfCards(){
        return numOfCards;
    }
    
-   public int getscore(){
+   public int getScore(){
        return score;
    } 
    
@@ -48,7 +48,7 @@ public class Hand {
                 
         
             }
-
+   
     int getStore() {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }

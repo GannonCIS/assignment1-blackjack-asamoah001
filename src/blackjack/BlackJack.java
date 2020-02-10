@@ -19,7 +19,7 @@ public class BlackJack {
         Hand myHand = new  Hand();
         for(int i=0; i < 6; i++){
             myHand.addCard(myDeck.dealCard());
-            System.out.println("numOfCards:"+ myHand.getNumofCards()+""+"score"+myHand.getscore());
+            System.out.println("numOfCards:"+ myHand.getNumOfCards()+""+"score"+myHand.getScore());
         }
        /** myDeck.printDeck();*/
        
